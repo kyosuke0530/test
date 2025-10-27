@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.sp-menu {
+  margin-left: auto;
+}
+
+#open {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#open.hide {
+  display: none;
+}
+
+#close {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+#close.show {
+  display: block;
+}
+
+main {
+  margin: 2rem .5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay ul {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.overlay li {
+  padding: .5rem;
+}
+
+.pc-menu {
+  display: none;
+  margin: 0;
+}
+
+@media screen and (min-width:600px) {
+  .sp-menu {
+    display: none;
+  }
+
+  .pc-menu ul {
+    display: flex;
+    
+    list-style-type: none;
+  }
+
+  #close.pc-menu li {
+    transform: translateY(1rem);
+    opacity: 0;
+
+  }
+
+  #close.show.pc-menu li {
+    margin: -.5rem;
+    padding: .5rem 1.5rem;
+    transform: none;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .pc-menu li:hover {
+    background: #f2f2f2;
+  }
+
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
+}

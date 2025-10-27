@@ -1,0 +1,4 @@
+AuthUserFile /var/www/html/Otani/Corporate2/.htpasswd
+AuthName "Secret Area"
+AuthType Basic
+require valid-user

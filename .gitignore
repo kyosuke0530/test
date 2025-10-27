@@ -1,0 +1,45 @@
+# Node.js や npm プロジェクトの依存ファイル
+node_modules/
+dist/
+build/
+
+# IDE / エディタ関連
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sw?
+*.bak
+
+# OSの一時ファイル
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# バックアップ系
+*_backup/
+*_bak/
+*.old
+*.tmp
+
+# Illustrator / Photoshop / Adobe関連
+*.ai
+*.psd
+*.sketch
+
+# npm / yarn lockなど（必要なければ無視）
+package-lock.json
+yarn.lock
+
+# 個別に無視したいフォルダ（サブモジュールやテスト用）
+nuxt/nuxt-sample/
+node-project/
+Travel\ Blog_wp/
+
+# 個別に無視したい大きめ画像
+*.png
+*.jpg
+*.jpeg
+*.gif

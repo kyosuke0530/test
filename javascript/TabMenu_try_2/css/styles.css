@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 40px auto;
+  width: 500px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  width: 120px;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px 4px 0 0;
+}
+
+.menu li a.active {
+  background: #000;
+  color: #fff;
+}
+
+.menu li a:not(.active):hover {
+  opacity: .7;
+  transition: opacity .7s;
+}
+
+.content {
+  padding: 10px;
+  display: none;
+}
+
+.content.active {
+  background: #000;
+  color: #fff;
+  display: block;
+}

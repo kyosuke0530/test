@@ -1,0 +1,41 @@
+body {
+  margin: 20px 80px;
+}
+
+.header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-logo img {
+  width: 25px;
+}
+.header-message {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header-btn {
+  margin-left: 15px;
+  padding: 15px 20px;
+  /* background: -webkit-gradient(deg, #ff385c 35%, #007bbb); */
+  background: linear-gradient(90deg, #ff385c , #dc2e4e);
+  color: white;
+  border-radius: 10px;
+}
+.fa-solid.fa-house-user {
+  margin-right: 5px;
+}
+
+main {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-left {
+  margin: 0 auto;
+}
+.map {
+  width: 50%;
+}

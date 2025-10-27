@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <title>nippo</title>
+</head>
+<body>
+<div class="container" id="app">
+  <h1 class="title">日報</h1>
+
+  <h2 class="subtitle">
+    お疲れ様です。日報は一日を振り返る大切な機会です。ゆっくりと思い出して書いてみてください。
+  </h2>
+
+  <h2 class="subtitle">今日は {{ today }}です。</h2> 
+ 
+  <!-- 日報投稿・編集-->
+  <h3 v-if="isAddMode()" class="subtitle">日報の投稿</h3>
+  <h3 v-else class="subtitle">日報の編集</h3>
+  <textarea v-model="content" class="textarea" cols="100" rows="10"></textarea> 
+  <button 
+    v-if="isAddMode()"
+    v-on:click="addNippo"
+    class="button is-primary"
+    style="margin: 5px;"
+    >投稿</button>
+  <button
+    v-else 
+    v-on:click="updateNippo(nippoCache)"
+    class="button is-primary"
+    style="margin: 5px;"
+    >編集</button>
+  
+  <h3 class="subtitle">日報一覧</h2>
+  <div class="card" style="padding: 10px;" v-for="(nippo, key) in nippoes">
+    <p>Date: {{nippo.date}} </p>
+    <p>Content: {{nippo.content}} </p>
+    <button
+      v-on:click="editNippo(nippo)"
+      class="button is-primary"
+      style="margin: 5px;"
+      >編集</button>
+    <button
+      v-on:click="deleteNippo(key)"
+      class="button is-warning"
+      style="margin: 5px;"
+      >削除</button>
+  </div>
+
+  <div align="center">nippo All rights reserved.</div>
+</div>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    mode: 'add',
+    nippoCache: null,
+    content: '', 
+    nippoes: [],
+    today: ''
+  },
+  created: function() {
+    this.today = this.getNow();
+  },
+  methods: {
+    addNippo: function() {
+      this.nippoes.unshift({ date: this.getNow(), content: this.content })
+      this.content = ''
+    },
+    editNippo: function(nippo) {
+      this.nippoCache = nippo
+      this.content = nippo.content
+      this.mode = 'edit'
+    },
+    updateNippo: function(nippo) {
+      nippo.content = this.content
+      this.nippoCache = null
+      this.mode = 'add'
+      this.content = ''
+    },
+    deleteNippo: function(key) {
+      Vue.delete(this.nippoes, key)
+    },
+    isAddMode: function() {
+      return this.mode == 'add'
+    },
+    // 今日の年月日を取得する
+    getNow: function () {
+      var now = new Date();
+      return now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日';
+    }
+  }
+});
+
+</script>
+</body>
+</html>

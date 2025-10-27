@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styele.css">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1>ハンバーガーメニュー</h1>
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">TOP</li>
+            <li class="menu-item">ABOUT</li>
+            <li class="menu-item">BLOG</li>
+            <li class="menu-item">CONTACT</li>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".menu-btn").on("click",function(){
+                $(".menu").toggleClass('show');
+            })
+        })
+    </script>
+</body>
+</html>

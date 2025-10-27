@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  margin: 40px auto;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
+
+a.active {
+  background: #000;
+  color: #fff;
+}
+
+a:not(.active):hover {
+  opacity: .5;
+  transition: .3s;
+}
+
+.content {
+  padding: 10px;
+  display: none;
+}
+
+.content.active {
+  display: block;
+  background: #000;
+  color: #fff;
+}

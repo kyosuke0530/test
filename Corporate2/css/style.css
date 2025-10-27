@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 26px;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  html {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-color: #EEE;
+}
+
+hr {
+  border-style: none;
+  border-top: 2px solid;
+}
+
+/* header */
+header {
+  height: 80px;
+}
+.header-margin {
+  margin: 2px 0 -15px 20px;
+}
+.header-logo {
+  width: 90px;
+  vertical-align: middle;
+}
+.header-nav {
+  margin-left: 20px;
+  margin-bottom: 2rem;
+}
+.header-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-ul li {
+  margin-right: 2rem;
+}
+.header-ul li a {
+  font-size: 0.6rem;
+}
+.header-right {
+  width: 15%;
+  display: none;
+}
+.header-btn {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+.header-btn a {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.5rem;
+  white-space: nowrap;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-right {
+    height: 100%;
+    width: 200px;
+    display: block;
+  }
+  .header-left {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  .header-margin {
+    margin: 0 2rem 0 4.5rem;
+  }
+  .header-logo {
+    width: 105px;
+  }
+  .header-nav {
+    margin-bottom: 0;
+  }
+  .header-ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+  }
+}
+
+/* mainvisual */
+.mainvisual {
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .mainvisual {
+    margin-top: 0;
+    height: 500px;
+  }
+}
+
+/* section */
+.sec-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+}
+.sec-title-jp {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+}
+.sec-hr {
+  margin-top: 0.9rem;
+  width: 38px;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .sec-title {
+    letter-spacing: 0.5rem;
+    white-space: nowrap;
+  }
+  .sec-hr {
+    margin-top: 1.5rem;
+    width: 2.4rem;
+  }
+}
+
+/* news */
+.news {
+  margin: 3.5rem 0 3.5rem 0.7rem;
+}
+.news-block {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  margin-top: 1.4rem;
+}
+.date_news-header {
+  display: flex;
+  align-items: center;
+}
+.date {
+  font-size: 0.6rem;
+}
+.news-header {
+  font-size: 0.6rem;
+  color: white;
+  background-color: black;
+  margin-left: 15px;
+  padding: 4px 8px 3px 5px;
+}
+.news-title {
+  margin-top: 0.1rem;
+  font-size: 0.6rem;
+  line-height: 1.8em;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .news {
+    margin: 6rem 0 6.2rem 14%;
+  }
+  .news-lineup {
+    display: flex;
+    align-items: center;
+  }
+  .news-block {
+    height: 4rem;
+    width: 100%;
+    margin-right: 90px;
+    margin-top: 1.4rem;
+  }
+  .news-block.margin {
+    border-left: 2px solid;
+    padding: 0px 15px;
+  }
+}
+
+/* about */
+.about-image {
+  height: 50vh;
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.about-block {
+  margin: 1.4rem 0 0 0.7rem;
+  width: 69%;
+
+}
+.about-desc {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.6rem;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .about {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    height: 533px;
+  }
+  .about-image {
+    height: 400px;
+    width: 54%;
+  }
+  .about-block {
+    position: absolute;
+    width: 30%;
+    right: 10%;
+    bottom: 0%;
+  }
+  .about-desc {
+    margin-top: 2.2rem;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+/* business */
+.business {
+  margin: 3.2rem 0.7rem 0;
+}
+.business-block {
+  margin-top: 32px;
+}
+.business-tltle {
+  font-size: 0.6rem;
+}
+.business-image {
+  margin-top: 0.4rem;
+  width: 100%;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .business {
+    margin: 5rem 14% 0px;
+  }
+  .business-box {
+    margin: 2rem auto 0;
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 106px auto 50px 36px 70px auto 70px;
+    grid-template-columns: 46% 46%;
+    gap: 0 8%;
+  }
+  .business-block.part1 {
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+  }
+  .business-block.part2 {
+    grid-row: 6 / 8;
+    grid-column: 1 / 2;
+  }
+  .business-block.part3 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+  }
+  .business-block.part4 {
+    grid-row: 4 / 7;
+    grid-column: 2 / 3;
+  }
+}
+/* company */
+.company {
+  margin: 3.6rem 0.7rem 0px;
+}
+.company-block {
+  padding: 2rem 1rem 2.2rem;
+  background-color: white;
+}
+.company-desc-sp {
+  width: 100%;
+  height: 392px;
+  margin-top: 1.6rem;
+  font-size: 0.5rem;
+  line-height: 0.7rem;
+}
+.company-desc-pc {
+  display: none;
+}
+.company-desc-margin {
+  line-height: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.rowspan {
+  vertical-align: top;
+}
+.sp_br {
+  display: block;
+  /* margin: 3.2rem 0; */
+}
+.hp_br {
+  display: none;
+}
+.company-image {
+  margin-top: 0.9rem;
+  width: 100%;
+  height: 497px;
+  object-fit: cover;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .company {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 14%;
+    height: 797px;
+  }
+  .company-block {
+    width: 56%;
+    padding: 5rem 4.2rem 5rem 3.2rem;
+  }
+  .company-desc-sp {
+    display: none;
+  }
+  .company-desc-pc {
+    display: block;
+    width: 100%;
+    height: 247px;
+    margin-top: 1.6rem;
+    font-size: 0.6rem;
+  }
+  .th-first {
+    width: 30%;
+  }
+  td,
+  th {
+    height: 1.2rem;
+  }
+  th {
+    font-weight: normal;
+  }
+  .company-desc-margin {
+    margin-bottom: 0.4rem;
+  }
+  .sp_br {
+    display: none;
+  }
+  .hp_br {
+    display: block;
+  }
+  .company-image {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    width: 55%;
+    object-fit: cover;
+  }
+}
+
+/* footer */
+footer {
+  padding: 0.5rem 0.7rem 27px;
+  background-color: white;
+}
+.footer-left {
+  height: 3rem;
+}
+.footer-logo {
+  width: 90px;
+  margin-top: 1.75rem;
+}
+.copyright {
+  font-size: 0.55rem;
+  margin-top: 1.8rem;
+}
+.footer-right {
+  font-size: 0.6rem;
+  line-height: 1rem;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  footer {
+    padding: 2rem 14% 0.2rem;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-left {
+    height: 7rem;
+  }
+  .footer-logo {
+    width: 100px;
+    margin-top: 1.75rem;
+  }
+  .footer-right {
+    line-height: 1rem;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+}
+
+/* news.html */
+.news-box {
+  margin: 60px 20px 140px;
+}
+.sec-title.news-margin {
+  margin: 2.5rem 0 3.4rem;
+  font-size: 1.3rem;
+}
+.news-press-sp {
+  margin-bottom: 0.7rem;
+  font-size: 0.55rem;
+}
+.news-press-hp {
+  display: none;
+  white-space: nowrap;
+}
+.bold-line {
+  margin-top: 0.6rem;
+  width: 50%;
+  border-top: 4px solid;
+}
+.bold-line-2 {
+  margin-top: 0.6rem;
+  margin-left: 50%;
+  width: 50%;
+  border-top: 4px solid;
+}
+.hr-gray {
+  color: lightgrey;
+}
+.news-news-block {
+  margin-top: 1.7rem;
+}
+.news-title.margin {
+  margin-bottom: 1.6rem;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .news-box {
+    margin: 0 14.5% 5.5rem;
+  }
+}
+
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  /* margin: 0 14.5% 5.5rem; */
+}
+/*タブのスタイル*/
+.tab_item {
+  font-size: 0.5rem;
+  margin: 0 13vw;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  /* padding: 40px 40px 0; */
+  clear: both;
+  overflow: hidden;
+}
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#press:checked ~ #press_content,
+#design:checked ~ #design_content {
+  display: block;
+}
+/*選択されているタブのスタイルを変える*/
+/* .tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+} */
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .tab_item {
+    font-size: 0.5rem;
+    margin: 0 5vw;
+    transition: all 0.2s ease;
+  }
+}
+
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .news-box {
+    margin: 0 14.5% 5.5rem;
+  }
+  .sec-title.news-margin {
+    margin: 3.4rem 0 4.3rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
+  .news-press-sp {
+    display: none;
+  }
+  .news-press-hp {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 0.6rem;
+  }
+  .bold-line {
+    width: 13vw;
+  }
+  .bold-line-2 {
+    margin-left: 13vw;
+    width: 13vw;
+  }
+  .news-news-block {
+    margin-top: 2rem;
+  }
+  .news-title.margin {
+    margin-bottom: 2rem;
+  }
+}
+
+/* inquiry.html */
+.contact-message {
+  margin: 1.7rem 0 0.2rem ;
+  font-size: 0.6rem;
+  line-height: 1.8em;
+}
+.inquiry-box {
+  margin: 65px 20px;
+}
+.sec-title.contact-margin {
+  font-size: 1.3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form label {
+  font-size: 0.6rem;
+  margin-top: 36px;
+  margin-bottom: 3px;
+}
+form label span {
+  color: red;
+}
+form input {
+  width: 100%;
+  height: 62px;
+  padding: 6px;
+  font-size: 0.8rem;
+  background-color: white;
+}
+form textarea {
+  width: 100%;
+  height: 210px;
+  padding: 10px;
+  resize: none;
+  font-size: 0.8rem;
+  background-color: white;
+}
+form .submit {
+  margin: 1.4rem auto 3.2rem;
+  background-color: #EEE;
+  width: 107px;
+  height: 45px;
+  border: solid 2px black;
+  font-size: 0.6rem;
+  text-align: center;
+}
+@media screen and (min-width:480px) {
+  /* 480px以上の時（HPサイズの時） */
+  .inquiry-box {
+    margin: 60px 14.5%;
+  }
+  .sec-title.contact-margin {
+    margin: 3.4rem 0 2rem;
+    font-size: 1.7rem;
+  }
+  .contact-message {
+    margin: 3.5rem 0 0.8rem 0;
+  }
+  form input {
+    width: 100%;
+    height: 55px;
+    padding: 6px;
+    font-size: 0.8rem;
+    background-color: white;
+  }
+}

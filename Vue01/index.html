@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app1">
+      <template1 
+              v-for= "item in itemList"
+              :prop1 = "item"
+              prop2 = "だ"      
+      ></template1>
+    </div>
+
+    <script>
+      const App1 = {
+        data() {
+          return {
+            itemList: [
+              {id: 0, text: '0番'},
+              {id: 1, text: '1番'},
+              {id: 2, text: '2番'},
+            ]
+          }
+        }
+      } //Vueコンポーネントを定義
+      const app = Vue.createApp(App1) //Vueアプリケーションを作成
+
+      app.component('template1',{ //Vueコンポーネントを定義
+        props: ['prop1', 'prop2'],
+        template:`
+        <li>{{ prop1.id }}は{{ prop1.text }}{{prop2}}</li>`
+      })
+
+      app.mount('#app1') //VueアプリケーションをHTML要素にマウント
+    </script>
+  </body>
+</html>

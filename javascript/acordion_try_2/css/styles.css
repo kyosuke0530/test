@@ -1,0 +1,55 @@
+h1 {
+  font-size: 18px;
+  border-bottom: solid 1px;
+  padding: 8px;
+}
+
+dl > div {
+  margin-bottom: 16px;
+}
+
+dt {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+dt::before {
+  content: 'Q. ';
+}
+
+dt::after {
+  content: '+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: .3s;
+}
+
+dl > div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  margin: 0;
+  display: none;
+}
+
+dl > div.appear dd {
+  display: block;
+  animation: .3s fadeIn;
+}
+
+dd::before {
+  content: 'A. ';
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

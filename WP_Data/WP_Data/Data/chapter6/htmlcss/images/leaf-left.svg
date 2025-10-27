@@ -1,0 +1,10 @@
+<svg id="Leaf" xmlns="http://www.w3.org/2000/svg" width="36.741" height="42.456" viewBox="0 0 36.741 42.456">
+  <path id="Intersection_3" data-name="Intersection 3" d="M.034,5.568c-.21,2.471.568,4.508,1.844,5.225,1.415-.917,2.553-3.1,2.763-5.568S4.073.717,2.8,0C1.382.917.245,3.1.034,5.568Z" transform="translate(15.189 20.721) rotate(-171)" fill="#7bba93"/>
+  <path id="Intersection_6" data-name="Intersection 6" d="M0,6.715c0,3.075,1.043,5.7,2.508,6.715,1.465-1.017,2.508-3.64,2.508-6.715S3.973,1.017,2.508,0C1.043,1.017,0,3.639,0,6.715Z" transform="translate(20.282 30.414) rotate(-164)" fill="#7bba93"/>
+  <path id="Intersection_8" data-name="Intersection 8" d="M0,7.616C0,4.127,1.183,1.152,2.845,0,4.507,1.152,5.69,4.127,5.69,7.616s-1.183,6.463-2.845,7.616C1.183,14.079,0,11.1,0,7.616Z" transform="matrix(-0.998, -0.07, 0.07, -0.998, 29.907, 36.634)" fill="#afd0a1"/>
+  <path id="Intersection_5" data-name="Intersection 5" d="M0,6.715C0,3.64,1.043,1.017,2.508,0,3.973,1.017,5.017,3.64,5.017,6.715s-1.043,5.7-2.508,6.715C1.043,12.413,0,9.791,0,6.715Z" transform="matrix(-0.017, -1, 1, -0.017, 5.247, 31.62)" fill="#679378"/>
+  <path id="Intersection_7" data-name="Intersection 7" d="M0,7.616C0,4.128,1.183,1.153,2.845,0,4.507,1.153,5.69,4.128,5.69,7.616s-1.183,6.463-2.845,7.616C1.183,14.079,0,11.1,0,7.616Z" transform="translate(12.941 42.456) rotate(-103)" fill="#7bba93"/>
+  <path id="Intersection_10" data-name="Intersection 10" d="M.034,5.225C-.176,2.753.6.717,1.878,0,3.294.917,4.431,3.1,4.642,5.568S4.073,10.076,2.8,10.792C1.382,9.875.245,7.7.034,5.225Z" transform="translate(0 17.709) rotate(-59)" fill="#afd0a1"/>
+  <path id="Path_4" data-name="Path 4" d="M1556.263,472.128s-20.66-4.548-26.558-26.558" transform="translate(-1521.309 -433.102)" fill="none" stroke="#7bba93" stroke-linecap="round" stroke-width="3"/>
+  <path id="Intersection_9" data-name="Intersection 9" d="M0,7.616c0,3.488,1.183,6.463,2.845,7.616C4.507,14.079,5.69,11.1,5.69,7.616S4.507,1.153,2.845,0C1.183,1.153,0,4.128,0,7.616Z" transform="translate(11.659 14.842) rotate(167)" fill="#679378"/>
+</svg>

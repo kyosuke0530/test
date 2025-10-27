@@ -1,0 +1,46 @@
+h1 {
+  font-size: 24px;
+  padding: 5px;
+  border-bottom: solid 1px;
+}
+
+dl > div {
+  margin: 10px 5px;
+}
+
+dl > div.appear dd {
+  display: block;
+}
+
+dt {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+dt::before {
+  content: 'Q. ';
+}
+
+dt::after {
+  content: '+';
+  position: absolute;
+  right: 15px;
+  transition: .3s;
+}
+
+div.appear > dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  margin: 0;
+  display: none;
+}
+
+dd.active {
+  display: block;
+}
+
+dd::before {
+  content: 'A. ';
+}
